@@ -66,3 +66,54 @@ print('==============SET================')
 my_set = {1,2,3,4,5,5,5,5,6,6,7}
 my_set.add(100)
 print(my_set)
+my_set2 = {1,2,3,4,5}
+print(my_set.difference(my_set2))
+print('===================BASIC DATA PART 2===================')
+is_old = False
+is_licensed = True
+if is_old or is_licensed:
+  print('Yes')
+elif is_licensed:
+  print('Something!')
+else:
+  print('No')
+user_password = '123'
+user_login = 'pavel'
+if user_password and user_login:
+  print('Welcome!')
+elif user_password == "" or user_login == "":
+  print('Incorrect Data!')
+else:
+  print('Hello!')
+
+is_friend = False
+can_message = 'Hello!' if is_friend else 'Goodbye!'
+print(can_message)
+items = [1,2,3,4,5,6,7,8,9,10]
+for item in items:
+  print(item)
+
+people = {
+  'name': 'Pavel',
+  'age': '24'
+}
+for items in people.keys():
+  print(items)
+for items in people.values():
+  print(items)
+for i, char in enumerate(list(range(10))):
+  print(i, char)
+  if char == 50:
+    print(f'index of 50 is: {i}')
+print('===============FUNCTIONS===============')
+def say_hello(name, surname):
+  print(f'Hello, {name} {surname}')
+say_hello('Pavel', 'Smirnov')
+print('===========ARGUMENTS=============')
+def highest_even(li):
+  evens = []
+  for item in li:
+    if item % 2 == 0:
+      evens.append(items)
+  return max(evens)
+print(highest_even([10,1,2,3,4,5,6,7,8,9,11,12,14]))
