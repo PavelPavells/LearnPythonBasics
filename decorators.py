@@ -27,6 +27,6 @@ def perfomance(fn):
     return wrapper
 @perfomance
 def long_time():
-    for i in range(1000000):
+    for i in range(10000000):
         i * 5
 long_time()
