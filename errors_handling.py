@@ -3,7 +3,7 @@
 
 while True:
     try:
-        age = int(input('What is your age? '))
+        age = 2
         10 / age
     except ValueError:
         print('please enter a number.')
